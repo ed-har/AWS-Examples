@@ -1,0 +1,16 @@
+{
+    "Grants": [
+      {
+        "Grantee": {
+          "DisplayName": "string",
+          "ID": "string",
+          "Type": "CanonicalUser"
+        },
+        "Permission": "FULL_CONTROL"
+      }
+    ],
+    "Owner": {
+      "DisplayName": "EdwinHarianto",
+      "ID": "f35195f19aa8affd83975456697d699718c4b4863a1bdee2d174b42feaa2b581<"
+    }
+  }
