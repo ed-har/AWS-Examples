@@ -1,0 +1,19 @@
+{
+    "Statement": [
+       {
+          "Effect": "Allow",
+          "Principal": {
+             "AWS": "arn:aws:iam::430118820813:user/cross-acct"
+          },
+          "Action": [
+            "s3:GetObject",
+            "s3:ListBucket",
+            "s3:PutObject"
+          ],
+          "Resource": [
+            "arn:aws:s3:::bucket-policy-example-ab2342",
+            "arn:aws:s3:::bucket-policy-example-ab2342/*"
+          ]
+       }
+    ]
+}
