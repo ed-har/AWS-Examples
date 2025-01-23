@@ -2,6 +2,7 @@
 ```sh
 aws ec2 create-network-acl --vpc-id vpc-01c5786ddd7d44770
 ```
+
 # Get AMI for Linux 2 
 ```sh
 aws ec2 describe-images \
