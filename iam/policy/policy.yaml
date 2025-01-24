@@ -1,6 +1,13 @@
 Version: '2012-10-17'
 Statement:
+  # Access to list the objects of a bucket 
   - Sid: "AccessToS3"
     Effect: Allow
     Action: "s3:ListBucket"
+    Resource:
+      - "*" 
+  # Access to list all buckets and its objects
+  - Sid: "AccessToList"
+    Effect: Allow
+    Action: "s3:ListAllMyBuckets"
     Resource: '*'

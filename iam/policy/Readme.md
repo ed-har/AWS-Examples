@@ -5,7 +5,7 @@
 ```sh
 aws iam create-policy \
 --policy-name my-policy \
---policy-document file://policy.json
+--policy-document "$(yq -o json policy.yaml)"
 ```
 
 ## Attach IAM Policy
@@ -13,4 +13,11 @@ aws iam create-policy \
 aws iam attach-user-policy \
 --policy-arn arn:aws:iam::597088034103:policy/my-policy \
 --user-name EdwinHarianto
+```
+
+## Deleting an IAM Policy version
+```sh
+aws iam delete policy version \
+--policy-arn arn:aws:iam::597088034103:policy/my-policy \
+--version-id v2
 ```
